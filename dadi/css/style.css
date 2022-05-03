@@ -52,6 +52,21 @@ main{
     padding:5px 10px;
 }
 
+#play{
+    background: #b50101;
+    border: 1px solid darkred;
+    color: white;
+    transition: 0.25s;
+    box-shadow: 9px 7px 15px 0px #141414;
+    
+}
+
+#play:hover{
+    transition: 0.25s;
+    box-shadow: 9px 7px 15px 5px #141414;
+
+}
+
 #playerName:hover{
     cursor: pointer;
     text-decoration: underline;
