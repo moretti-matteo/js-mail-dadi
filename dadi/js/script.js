@@ -32,7 +32,7 @@ document.getElementById("play").addEventListener("click", function () {
 });
 
 
-document.querySelector("#changeName").addEventListener("click", function () {
+document.querySelector("#playerName").addEventListener("click", function () {
     let lastUsername = playerName;
     do {
         playerName = prompt(`User attuale: "${lastUsername}", Inserisci Nuovo Username:`);

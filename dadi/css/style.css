@@ -52,6 +52,11 @@ main{
     padding:5px 10px;
 }
 
+#playerName:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
 .container > *{
     margin:25px 0 12.5px 0;
 }
