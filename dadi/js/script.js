@@ -8,7 +8,6 @@ let playerName = "player1";
 
 document.getElementById("play").addEventListener("click", function () {
 
-
     const numberPlayer1 = Math.floor(Math.random() * 6 + 1);
     const numberCPU = Math.floor(Math.random() * 6 + 1);
 
@@ -36,20 +35,20 @@ document.getElementById("play").addEventListener("click", function () {
 document.querySelector("#changeName").addEventListener("click", function () {
     let lastUsername = playerName;
     do {
-        playerName = prompt("Inserisci Username");
+        playerName = prompt(`User attuale: "${lastUsername}", Inserisci Nuovo Username:`);
 
         if (playerName === "") {
-            alert("inserisci qualcosa, Premi annulla per annullare");
+            alert("lo username non può essere vuoto, Premi annulla per annullare");
         }
 
     } while (playerName === "");
 
-    if(playerName !== null){
+    if (playerName !== null) {
         winner.innerHTML = "";
         playerScore.innerHTML = 0;
         cpuScore.innerHTML = 0;
         document.querySelector("#playerName").innerHTML = playerName;
-    }else{
+    } else {
         playerName = lastUsername;
     }
 })
