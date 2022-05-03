@@ -8,3 +8,4 @@ if (emailListDebug.filter(email => userEmail === email).length > 0) {
 } else {
     console.log("Accesso negato, Non sei registrato!");
 }
+
