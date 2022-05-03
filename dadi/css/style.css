@@ -5,14 +5,38 @@
 }
 
 body{
+    color:white;
+    background-image: url("../sfondo.avif");
+    background-position: center;
+    background-size: cover;
     font-family: verdana;
 }
 
+i{
+    font-size: 30px;
+}
+
+i:last-child{
+    transform: scaleX(-1);
+}
+
 main{
+    gap:10px;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-direction: column;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+
+}
+
+.title h1{
+    margin: 0 10px;
 }
 
 .container{
@@ -20,13 +44,22 @@ main{
     border:1px solid black;
     text-align: center;
     width: 500px;
-
+    backdrop-filter: blur(7px);
+    background: rgba(0,100,0,50%);
 }
 
 #play, #changeName{
     padding:5px 10px;
 }
 
+.container > *{
+    margin:25px 0 12.5px 0;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
 
 button:hover{
     cursor: pointer;
@@ -49,6 +82,10 @@ button:hover{
 
 .col-25{
     width: 25%;
+}
+
+.col-50{
+    width: 50%;
 }
 
 .container-bottom div{
