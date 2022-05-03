@@ -3,7 +3,10 @@ const emailListDebug = ["a", "b", "c"];
 
 const userEmail = prompt("Inserisci la tua E-mail");
 
-if (emailListDebug.filter(email => userEmail === email).length > 0) {
+const verify = (emailListDebug.filter(email => userEmail === email).length > 0) ? true : false;
+
+// if(emailListDebug.filter(email => userEmail === email).length > 0)
+if (verify) {
     console.log("Accesso eseguito!");
 } else {
     console.log("Accesso negato, Non sei registrato!");
